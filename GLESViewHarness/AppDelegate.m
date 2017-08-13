@@ -340,15 +340,9 @@ trap_render (cairo_t *cr, cairo_surface_t *surface, int w, int h)
 	
 	UIViewController* vc = [[UIViewController alloc]initWithNibName:nil bundle:nil];
 	
-	/*
-	GLKViewController * viewController = [[GLKViewController alloc] initWithNibName:nil bundle:nil]; // 1
-	 viewController.view = view; // 2
-	 viewController.delegate = self; // 3
-	 viewController.preferredFramesPerSecond = 60; //*/
-	
 	device = cairo_nsgles_device_create ((__bridge void *)(context));
 	
-	//cairo_gl_device_set_thread_aware(device, TRUE);
+	cairo_gl_device_set_thread_aware(device, TRUE);
 	
 	surface = cairo_gl_surface_create_for_view (device, (__bridge void *)(self), 400, 400);
 	
@@ -375,8 +369,6 @@ trap_render (cairo_t *cr, cairo_surface_t *surface, int w, int h)
 	GLKView * view = [self.window.subviews objectAtIndex:0];
 	
 	trap_render(cr, surface, WIDTH, HEIGHT);
-	
-	//cairo_gl_surface_swapbuffers(surface);
 	
 	[view display];
 		
@@ -409,38 +401,6 @@ trap_render (cairo_t *cr, cairo_surface_t *surface, int w, int h)
 - (void)applicationWillTerminate:(UIApplication *)application {
 	// Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
-
-#pragma mark - GLKViewDelegate
-
-- (void)glkView:(GLKView *)view drawInRect:(CGRect)rect {
- 
-	//glClearColor(_curRed, 0.0, 0.0, 1.0);
-	//glClear(GL_COLOR_BUFFER_BIT);
-	
-}
-
-#pragma mark - GLKViewControllerDelegate
-
-- (void)glkViewControllerUpdate:(GLKViewController *)controller {
-	
-	// Clear background as black
-	/*
-	cairo_set_source_rgba(cr, 0, 0, 0, 0);
-	cairo_paint(cr);
-	
-	cairo_set_operator(cr, CAIRO_OPERATOR_OVER);
-	
-	cairo_set_source_rgba(cr, 0, 150, 0, 1);
-	
-	cairo_rectangle(cr, 0, 0, 200, 100);
-	cairo_fill(cr);
-	
-	cairo_surface_flush(surface);*/
-	
-	//trap_render(cr, surface, WIDTH, HEIGHT);
-	
-}
-
 
 
 @end
