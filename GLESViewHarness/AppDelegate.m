@@ -57,7 +57,7 @@ static double animpts[NUMPTS * 2];
 static double deltas[NUMPTS * 2];
 static int fill_gradient = 1;
 
-static cairo_user_data_key_t const CAIROSDL_TARGET_KEY[1] = {{1}};
+//static cairo_user_data_key_t const CAIROSDL_TARGET_KEY[1] = {{1}};
 
 static void
 gear (cairo_t *cr,
@@ -278,15 +278,18 @@ trap_render (cairo_t *cr, cairo_surface_t *surface, int w, int h)
 			
 			pattern = cairo_pattern_create_linear (x1, y1, x2, y2);
 			
-			cairo_pattern_set_filter (pattern, CAIRO_FILTER_FAST);
+			cairo_pattern_set_filter (pattern, CAIRO_FILTER_NEAREST);
 			
 			cairo_pattern_add_color_stop_rgba (pattern, 0.0, 0.0, 0.0, 1.0, 0.75);
-			//cairo_pattern_add_color_stop_rgba (pattern, 1.0, 1.0, 0.0, 0.0, 1.0);
+			
+			cairo_pattern_add_color_stop_rgba (pattern, 1.0, 1.0, 0.0, 0.0, 1.0);
 			
 			cairo_move_to (cr, 0, 0);
 			
 			cairo_set_source (cr, pattern);
+			
 			cairo_pattern_destroy (pattern);
+			
 		} else {
 			cairo_set_source_rgba (cr, FILL_R, FILL_G, FILL_B, FILL_OPACITY);
 		}
@@ -345,7 +348,7 @@ trap_render (cairo_t *cr, cairo_surface_t *surface, int w, int h)
 	
 	device = cairo_nsgles_device_create ((__bridge void *)(context));
 	
-	cairo_gl_device_set_thread_aware(device, TRUE);
+	//cairo_gl_device_set_thread_aware(device, TRUE);
 	
 	surface = cairo_gl_surface_create_for_view (device, (__bridge void *)(self), 400, 400);
 	
@@ -367,7 +370,7 @@ trap_render (cairo_t *cr, cairo_surface_t *surface, int w, int h)
 
 - (void)render:(CADisplayLink*)displayLink {
 	
-	//@autoreleasepool {
+	@autoreleasepool {
 	
 	GLKView * view = [self.window.subviews objectAtIndex:0];
 	
@@ -377,7 +380,7 @@ trap_render (cairo_t *cr, cairo_surface_t *surface, int w, int h)
 	
 	[view display];
 		
-	//}
+	}
 }
 
 
