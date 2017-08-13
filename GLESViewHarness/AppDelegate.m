@@ -402,5 +402,21 @@ trap_render (cairo_t *cr, cairo_surface_t *surface, int w, int h)
 	// Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
 
+#pragma mark - GLKViewDelegate
+
+- (void)glkView:(GLKView *)view drawInRect:(CGRect)rect {
+ 
+	
+	
+}
+
+#pragma mark - GLKViewControllerDelegate
+
+- (void)glkViewControllerUpdate:(GLKViewController *)controller {
+	
+	
+}
+
+
 
 @end
