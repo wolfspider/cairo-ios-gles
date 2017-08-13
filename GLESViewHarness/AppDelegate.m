@@ -278,7 +278,7 @@ trap_render (cairo_t *cr, cairo_surface_t *surface, int w, int h)
 			
 			pattern = cairo_pattern_create_linear (x1, y1, x2, y2);
 			
-			cairo_pattern_set_filter (pattern, CAIRO_FILTER_NEAREST);
+			cairo_pattern_set_filter (pattern, CAIRO_FILTER_FAST);
 			
 			cairo_pattern_add_color_stop_rgba (pattern, 0.0, 0.0, 0.0, 1.0, 0.75);
 			
@@ -329,7 +329,8 @@ trap_render (cairo_t *cr, cairo_surface_t *surface, int w, int h)
 	
 	self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
  
-	EAGLContext * context = [[EAGLContext alloc] initWithAPI:kEAGLRenderingAPIOpenGLES2]; 
+	EAGLContext * context = [[EAGLContext alloc] initWithAPI:kEAGLRenderingAPIOpenGLES2];
+	context.multiThreaded = true;
 	GLKView *view = [[GLKView alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
 	view.context = context;
 	view.delegate = self;
@@ -347,6 +348,8 @@ trap_render (cairo_t *cr, cairo_surface_t *surface, int w, int h)
 	surface = cairo_gl_surface_create_for_view (device, (__bridge void *)(self), 400, 400);
 	
 	cr = cairo_create (surface);
+	
+	cairo_set_antialias(cr, CAIRO_ANTIALIAS_FAST);
 	
 	[self.window addSubview:view];
 	self.window.rootViewController = vc;
