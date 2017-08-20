@@ -336,7 +336,7 @@ trap_render (cairo_t *cr, cairo_surface_t *surface, int w, int h)
 	view.delegate = self;
 	view.drawableDepthFormat = GLKViewDrawableDepthFormat24;
 	view.drawableStencilFormat = GLKViewDrawableStencilFormat8;
-	view.drawableMultisample = GLKViewDrawableMultisampleNone;
+	//view.drawableMultisample = GLKViewDrawableMultisample4X;
 	view.drawableColorFormat = GLKViewDrawableColorFormatRGBA8888;
 	
 	UIViewController* vc = [[UIViewController alloc]initWithNibName:nil bundle:nil];

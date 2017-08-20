@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AB2736D11F08C5F900DFBC49 /* libpixman-1.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AB0654C81E66342400CE15A3 /* libpixman-1.a */; };
 		AB31F83B1E59797C006FDC31 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AB31F83A1E59797C006FDC31 /* main.m */; };
 		AB31F83E1E59797C006FDC31 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AB31F83D1E59797C006FDC31 /* AppDelegate.m */; };
 		AB31F8411E59797C006FDC31 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB31F8401E59797C006FDC31 /* ViewController.m */; };
@@ -18,6 +17,7 @@
 		AB31F8541E597F99006FDC31 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB31F8531E597F99006FDC31 /* OpenGLES.framework */; };
 		AB31F8561E597FA5006FDC31 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB31F8551E597FA5006FDC31 /* QuartzCore.framework */; };
 		AB3A9D911E5C211C00649B19 /* libcairo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AB3A9D901E5C211C00649B19 /* libcairo.a */; };
+		AB447CE41F46B8AF000EC5FF /* libpixman-1.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AB0654C81E66342400CE15A3 /* libpixman-1.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,7 +66,7 @@
 				AB31F8561E597FA5006FDC31 /* QuartzCore.framework in Frameworks */,
 				AB31F8541E597F99006FDC31 /* OpenGLES.framework in Frameworks */,
 				AB31F8521E597BA8006FDC31 /* GLKit.framework in Frameworks */,
-				AB2736D11F08C5F900DFBC49 /* libpixman-1.a in Frameworks */,
+				AB447CE41F46B8AF000EC5FF /* libpixman-1.a in Frameworks */,
 				AB3A9D911E5C211C00649B19 /* libcairo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -362,7 +362,7 @@
 				HEADER_SEARCH_PATHS = "/Users/jessebennett/Documents/UnsafeLibs/cairo-1.15.2-iOS/**";
 				INCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "";
 				INFOPLIST_FILE = GLESViewHarness/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)";
 				OTHER_LDFLAGS = "-ObjC";
@@ -382,7 +382,7 @@
 				HEADER_SEARCH_PATHS = "/Users/jessebennett/Documents/UnsafeLibs/cairo-1.15.2-iOS/**";
 				INCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "";
 				INFOPLIST_FILE = GLESViewHarness/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)";
 				OTHER_LDFLAGS = "-ObjC";
