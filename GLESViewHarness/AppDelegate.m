@@ -155,7 +155,7 @@ trap_render (cairo_t *cr, cairo_surface_t *surface, int w, int h)
 	
 	cairo_set_fill_rule (cr, CAIRO_FILL_RULE_EVEN_ODD);
 	
-	cairo_set_source_rgba (cr, 0, 0, 0, 0);
+	cairo_set_source_rgba (cr, 1, 1, 1, 1);
 	cairo_set_operator (cr, CAIRO_OPERATOR_SOURCE);
 	cairo_rectangle (cr, 0, 0, w, h);
 	cairo_fill (cr);
@@ -308,6 +308,52 @@ trap_render (cairo_t *cr, cairo_surface_t *surface, int w, int h)
 
 }
 
+void helloWorld(cairo_t* cr, cairo_surface_t *surface) {
+	
+	double r, g, b;
+	
+	cairo_set_fill_rule (cr, CAIRO_FILL_RULE_EVEN_ODD);
+	
+	cairo_set_source_rgba (cr, 1, 1, 1, 1);
+	cairo_set_operator (cr, CAIRO_OPERATOR_SOURCE);
+	cairo_paint (cr);
+	
+	/*
+	 if (scale > 40)
+		{
+		scale = 0;
+		}*/
+	
+	cairo_set_operator(cr, CAIRO_OPERATOR_OVER);
+	
+	// Random color
+	r = drand48();
+	g = drand48();
+	b = drand48();
+	
+	cairo_save (cr);
+	
+	cairo_translate (cr, 80, 80);
+	cairo_set_source_rgba (cr, 0, 0, 0, 0.8);
+	cairo_set_font_size (cr, 40);
+	cairo_select_font_face (cr, "Andale Mono",
+							CAIRO_FONT_SLANT_NORMAL, CAIRO_FONT_WEIGHT_BOLD);
+	//cairo_font_options_set_antialias(cfo, CAIRO_ANTIALIAS_GRAY);
+	
+	cairo_show_text (cr, "Hello World");
+	
+	
+	
+	//cairo_gl_surface_swapbuffers (surface);
+	
+	cairo_restore (cr);
+	
+	//scale += 1;
+	
+	cairo_surface_flush(surface);
+	
+}
+
 @interface AppDelegate ()
 
 @end
@@ -317,6 +363,7 @@ trap_render (cairo_t *cr, cairo_surface_t *surface, int w, int h)
 	BOOL _increasing;
 	cairo_surface_t *surface;
 	cairo_t *cr;
+	cairo_font_options_t *cfo;
 	cairo_device_t *device;
 }
 
@@ -349,6 +396,11 @@ trap_render (cairo_t *cr, cairo_surface_t *surface, int w, int h)
 	
 	cr = cairo_create (surface);
 	
+	// alocate memory for font options
+	cfo = cairo_font_options_create();
+	
+	cairo_font_options_set_antialias(cfo, CAIRO_ANTIALIAS_FAST);
+	
 	cairo_set_antialias(cr, CAIRO_ANTIALIAS_FAST);
 	
 	[self.window addSubview:view];
@@ -372,6 +424,8 @@ trap_render (cairo_t *cr, cairo_surface_t *surface, int w, int h)
 	GLKView * view = [self.window.subviews objectAtIndex:0];
 	
 	trap_render(cr, surface, WIDTH, HEIGHT);
+		
+	//helloWorld(cr, surface);
 	
 	[view display];
 		
