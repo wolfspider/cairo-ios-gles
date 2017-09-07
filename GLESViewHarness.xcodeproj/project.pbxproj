@@ -16,8 +16,8 @@
 		AB31F8521E597BA8006FDC31 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB31F8511E597BA8006FDC31 /* GLKit.framework */; };
 		AB31F8541E597F99006FDC31 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB31F8531E597F99006FDC31 /* OpenGLES.framework */; };
 		AB31F8561E597FA5006FDC31 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB31F8551E597FA5006FDC31 /* QuartzCore.framework */; };
-		AB3A9D911E5C211C00649B19 /* libcairo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AB3A9D901E5C211C00649B19 /* libcairo.a */; };
 		AB447CE41F46B8AF000EC5FF /* libpixman-1.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AB0654C81E66342400CE15A3 /* libpixman-1.a */; };
+		ABB1611C1F60C22A00840625 /* libcairo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AB3A9F3A1E5C2EB400649B19 /* libcairo.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,7 +67,7 @@
 				AB31F8541E597F99006FDC31 /* OpenGLES.framework in Frameworks */,
 				AB31F8521E597BA8006FDC31 /* GLKit.framework in Frameworks */,
 				AB447CE41F46B8AF000EC5FF /* libpixman-1.a in Frameworks */,
-				AB3A9D911E5C211C00649B19 /* libcairo.a in Frameworks */,
+				ABB1611C1F60C22A00840625 /* libcairo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

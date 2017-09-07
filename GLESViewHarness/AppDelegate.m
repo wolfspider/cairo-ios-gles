@@ -310,13 +310,15 @@ trap_render (cairo_t *cr, cairo_surface_t *surface, int w, int h)
 
 void helloWorld(cairo_t* cr, cairo_surface_t *surface) {
 	
-	double r, g, b;
+	//double r, g, b;
 	
 	cairo_set_fill_rule (cr, CAIRO_FILL_RULE_EVEN_ODD);
 	
 	cairo_set_source_rgba (cr, 1, 1, 1, 1);
 	cairo_set_operator (cr, CAIRO_OPERATOR_SOURCE);
-	cairo_paint (cr);
+	cairo_rectangle (cr, 0, 0, 400, 400);
+	cairo_fill (cr);
+	cairo_set_operator (cr, CAIRO_OPERATOR_OVER);
 	
 	/*
 	 if (scale > 40)
@@ -324,20 +326,19 @@ void helloWorld(cairo_t* cr, cairo_surface_t *surface) {
 		scale = 0;
 		}*/
 	
-	cairo_set_operator(cr, CAIRO_OPERATOR_OVER);
+	//cairo_set_operator(cr, CAIRO_OPERATOR_OVER);
 	
 	// Random color
-	r = drand48();
-	g = drand48();
-	b = drand48();
+	//r = drand48();
+	//g = drand48();
+	//b = drand48();
 	
 	cairo_save (cr);
 	
 	cairo_translate (cr, 80, 80);
 	cairo_set_source_rgba (cr, 0, 0, 0, 0.8);
-	cairo_set_font_size (cr, 40);
-	cairo_select_font_face (cr, "Andale Mono",
-							CAIRO_FONT_SLANT_NORMAL, CAIRO_FONT_WEIGHT_BOLD);
+	cairo_set_font_size (cr, 15);
+	//cairo_select_font_face (cr, "San Francisco",CAIRO_FONT_SLANT_NORMAL, CAIRO_FONT_WEIGHT_BOLD);
 	//cairo_font_options_set_antialias(cfo, CAIRO_ANTIALIAS_GRAY);
 	
 	cairo_show_text (cr, "Hello World");
@@ -399,9 +400,9 @@ void helloWorld(cairo_t* cr, cairo_surface_t *surface) {
 	// alocate memory for font options
 	cfo = cairo_font_options_create();
 	
-	cairo_font_options_set_antialias(cfo, CAIRO_ANTIALIAS_FAST);
+	cairo_font_options_set_antialias(cfo, CAIRO_ANTIALIAS_BEST);
 	
-	cairo_set_antialias(cr, CAIRO_ANTIALIAS_FAST);
+	cairo_set_antialias(cr, CAIRO_ANTIALIAS_SUBPIXEL);
 	
 	[self.window addSubview:view];
 	self.window.rootViewController = vc;

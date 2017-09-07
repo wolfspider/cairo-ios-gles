@@ -86,17 +86,638 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "GLESViewHarness/AppDelegate.m"
-            timestampString = "524946048.657654"
+            timestampString = "526437091.139905"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "343"
-            endingLineNumber = "343"
+            startingLineNumber = "344"
+            endingLineNumber = "344"
             landmarkName = "helloWorld()"
             landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../UnsafeLibs/cairo-1.15.2-iOS/cairo/cairo.c"
+            timestampString = "526437517.913921"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "3218"
+            endingLineNumber = "3218"
+            landmarkName = "cairo_show_text()"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../UnsafeLibs/cairo-1.15.2-iOS/cairo/cairo.c"
+            timestampString = "526442955.528804"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "3263"
+            endingLineNumber = "3263"
+            landmarkName = "cairo_show_text()"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../UnsafeLibs/cairo-1.15.2-iOS/cairo/cairo-gl-glyphs.c"
+            timestampString = "526446366.533429"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "282"
+            endingLineNumber = "282"
+            landmarkName = "render_glyphs()"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../UnsafeLibs/cairo-1.15.2-iOS/cairo/cairo-gl-private.h"
+            timestampString = "526450508.167245"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "488"
+            endingLineNumber = "488"
+            landmarkName = "_cairo_gl_context_release (cairo_gl_context_t *ctx, cairo_status_t status)"
+            landmarkType = "9">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "_cairo_gl_composite_begin"
+                  moduleName = "GLESViewHarness"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jessebennett/Documents/UnsafeLibs/cairo-1.15.2-iOS/cairo/cairo-gl-private.h"
+                  timestampString = "526452512.683765"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "488"
+                  endingLineNumber = "488"
+                  offsetFromSymbolStart = "960">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "_gl_flush"
+                  moduleName = "GLESViewHarness"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jessebennett/Documents/UnsafeLibs/cairo-1.15.2-iOS/cairo/cairo-gl-private.h"
+                  timestampString = "526452512.691795"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "488"
+                  endingLineNumber = "488"
+                  offsetFromSymbolStart = "380">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "render_glyphs"
+                  moduleName = "GLESViewHarness"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jessebennett/Documents/UnsafeLibs/cairo-1.15.2-iOS/cairo/cairo-gl-private.h"
+                  timestampString = "526452512.699649"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "488"
+                  endingLineNumber = "488"
+                  offsetFromSymbolStart = "668">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "render_glyphs"
+                  moduleName = "GLESViewHarness"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jessebennett/Documents/UnsafeLibs/cairo-1.15.2-iOS/cairo/cairo-gl-private.h"
+                  timestampString = "526452512.707199"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "488"
+                  endingLineNumber = "488"
+                  offsetFromSymbolStart = "1324">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "_cairo_gl_msaa_compositor_mask"
+                  moduleName = "GLESViewHarness"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jessebennett/Documents/UnsafeLibs/cairo-1.15.2-iOS/cairo/cairo-gl-private.h"
+                  timestampString = "526452512.716809"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "488"
+                  endingLineNumber = "488"
+                  offsetFromSymbolStart = "724">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "_cairo_gl_msaa_compositor_fill"
+                  moduleName = "GLESViewHarness"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jessebennett/Documents/UnsafeLibs/cairo-1.15.2-iOS/cairo/cairo-gl-private.h"
+                  timestampString = "526452512.724814"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "488"
+                  endingLineNumber = "488"
+                  offsetFromSymbolStart = "564">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "_cairo_gl_msaa_compositor_stroke"
+                  moduleName = "GLESViewHarness"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jessebennett/Documents/UnsafeLibs/cairo-1.15.2-iOS/cairo/cairo-gl-private.h"
+                  timestampString = "526452512.732203"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "488"
+                  endingLineNumber = "488"
+                  offsetFromSymbolStart = "624">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "query_surface_capabilities"
+                  moduleName = "GLESViewHarness"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jessebennett/Documents/UnsafeLibs/cairo-1.15.2-iOS/cairo/cairo-gl-private.h"
+                  timestampString = "526452512.739484"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "488"
+                  endingLineNumber = "488"
+                  offsetFromSymbolStart = "384">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "_cairo_gl_pattern_texture_setup"
+                  moduleName = "GLESViewHarness"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jessebennett/Documents/UnsafeLibs/cairo-1.15.2-iOS/cairo/cairo-gl-private.h"
+                  timestampString = "526452512.747069"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "488"
+                  endingLineNumber = "488"
+                  offsetFromSymbolStart = "388">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "_cairo_gl_pattern_texture_setup"
+                  moduleName = "GLESViewHarness"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jessebennett/Documents/UnsafeLibs/cairo-1.15.2-iOS/cairo/cairo-gl-private.h"
+                  timestampString = "526452512.754352"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "488"
+                  endingLineNumber = "488"
+                  offsetFromSymbolStart = "716">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "_resolve_multisampling"
+                  moduleName = "GLESViewHarness"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jessebennett/Documents/UnsafeLibs/cairo-1.15.2-iOS/cairo/cairo-gl-private.h"
+                  timestampString = "526452512.763603"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "488"
+                  endingLineNumber = "488"
+                  offsetFromSymbolStart = "340">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "_cairo_gl_subsurface_clone_operand_init"
+                  moduleName = "GLESViewHarness"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jessebennett/Documents/UnsafeLibs/cairo-1.15.2-iOS/cairo/cairo-gl-private.h"
+                  timestampString = "526452512.771616"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "488"
+                  endingLineNumber = "488"
+                  offsetFromSymbolStart = "396">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "_cairo_gl_subsurface_clone_operand_init"
+                  moduleName = "GLESViewHarness"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jessebennett/Documents/UnsafeLibs/cairo-1.15.2-iOS/cairo/cairo-gl-private.h"
+                  timestampString = "526452512.779136"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "488"
+                  endingLineNumber = "488"
+                  offsetFromSymbolStart = "616">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "_cairo_gl_create_gradient_texture"
+                  moduleName = "GLESViewHarness"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jessebennett/Documents/UnsafeLibs/cairo-1.15.2-iOS/cairo/cairo-gl-private.h"
+                  timestampString = "526452512.786535"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "488"
+                  endingLineNumber = "488"
+                  offsetFromSymbolStart = "260">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "fill_boxes"
+                  moduleName = "GLESViewHarness"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jessebennett/Documents/UnsafeLibs/cairo-1.15.2-iOS/cairo/cairo-gl-private.h"
+                  timestampString = "526452512.794229"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "488"
+                  endingLineNumber = "488"
+                  offsetFromSymbolStart = "224">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "copy_boxes"
+                  moduleName = "GLESViewHarness"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jessebennett/Documents/UnsafeLibs/cairo-1.15.2-iOS/cairo/cairo-gl-private.h"
+                  timestampString = "526452512.801801"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "488"
+                  endingLineNumber = "488"
+                  offsetFromSymbolStart = "372">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "composite_boxes"
+                  moduleName = "GLESViewHarness"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jessebennett/Documents/UnsafeLibs/cairo-1.15.2-iOS/cairo/cairo-gl-private.h"
+                  timestampString = "526452512.809162"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "488"
+                  endingLineNumber = "488"
+                  offsetFromSymbolStart = "476">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "_cairo_gl_finish_bounded_spans"
+                  moduleName = "GLESViewHarness"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jessebennett/Documents/UnsafeLibs/cairo-1.15.2-iOS/cairo/cairo-gl-private.h"
+                  timestampString = "526452512.817334"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "488"
+                  endingLineNumber = "488"
+                  offsetFromSymbolStart = "96">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "_cairo_gl_finish_unbounded_spans"
+                  moduleName = "GLESViewHarness"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jessebennett/Documents/UnsafeLibs/cairo-1.15.2-iOS/cairo/cairo-gl-private.h"
+                  timestampString = "526452512.824809"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "488"
+                  endingLineNumber = "488"
+                  offsetFromSymbolStart = "204">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "fill_boxes"
+                  moduleName = "GLESViewHarness"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jessebennett/Documents/UnsafeLibs/cairo-1.15.2-iOS/cairo/cairo-gl-private.h"
+                  timestampString = "526452512.832144"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "488"
+                  endingLineNumber = "488"
+                  offsetFromSymbolStart = "224">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "composite"
+                  moduleName = "GLESViewHarness"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jessebennett/Documents/UnsafeLibs/cairo-1.15.2-iOS/cairo/cairo-gl-private.h"
+                  timestampString = "526452512.840017"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "488"
+                  endingLineNumber = "488"
+                  offsetFromSymbolStart = "448">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "composite_boxes"
+                  moduleName = "GLESViewHarness"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jessebennett/Documents/UnsafeLibs/cairo-1.15.2-iOS/cairo/cairo-gl-private.h"
+                  timestampString = "526452512.848426"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "488"
+                  endingLineNumber = "488"
+                  offsetFromSymbolStart = "404">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "composite_traps"
+                  moduleName = "GLESViewHarness"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jessebennett/Documents/UnsafeLibs/cairo-1.15.2-iOS/cairo/cairo-gl-private.h"
+                  timestampString = "526452512.855796"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "488"
+                  endingLineNumber = "488"
+                  offsetFromSymbolStart = "488">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "composite_tristrip"
+                  moduleName = "GLESViewHarness"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jessebennett/Documents/UnsafeLibs/cairo-1.15.2-iOS/cairo/cairo-gl-private.h"
+                  timestampString = "526452512.863118"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "488"
+                  endingLineNumber = "488"
+                  offsetFromSymbolStart = "372">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "cairo_gl_surface_create"
+                  moduleName = "GLESViewHarness"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jessebennett/Documents/UnsafeLibs/cairo-1.15.2-iOS/cairo/cairo-gl-private.h"
+                  timestampString = "526452512.870857"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "488"
+                  endingLineNumber = "488"
+                  offsetFromSymbolStart = "416">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "cairo_gl_surface_create"
+                  moduleName = "GLESViewHarness"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jessebennett/Documents/UnsafeLibs/cairo-1.15.2-iOS/cairo/cairo-gl-private.h"
+                  timestampString = "526452512.87822"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "488"
+                  endingLineNumber = "488"
+                  offsetFromSymbolStart = "596">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "_cairo_gl_surface_clear"
+                  moduleName = "GLESViewHarness"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jessebennett/Documents/UnsafeLibs/cairo-1.15.2-iOS/cairo/cairo-gl-private.h"
+                  timestampString = "526452512.885623"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "488"
+                  endingLineNumber = "488"
+                  offsetFromSymbolStart = "432">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "cairo_gl_surface_create_for_texture"
+                  moduleName = "GLESViewHarness"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jessebennett/Documents/UnsafeLibs/cairo-1.15.2-iOS/cairo/cairo-gl-private.h"
+                  timestampString = "526452512.893218"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "488"
+                  endingLineNumber = "488"
+                  offsetFromSymbolStart = "404">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "cairo_gl_surface_swapbuffers"
+                  moduleName = "GLESViewHarness"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jessebennett/Documents/UnsafeLibs/cairo-1.15.2-iOS/cairo/cairo-gl-private.h"
+                  timestampString = "526452512.90184"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "488"
+                  endingLineNumber = "488"
+                  offsetFromSymbolStart = "432">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "_cairo_gl_surface_draw_image"
+                  moduleName = "GLESViewHarness"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jessebennett/Documents/UnsafeLibs/cairo-1.15.2-iOS/cairo/cairo-gl-private.h"
+                  timestampString = "526452512.911147"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "488"
+                  endingLineNumber = "488"
+                  offsetFromSymbolStart = "1352">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "_cairo_gl_surface_flush"
+                  moduleName = "GLESViewHarness"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jessebennett/Documents/UnsafeLibs/cairo-1.15.2-iOS/cairo/cairo-gl-private.h"
+                  timestampString = "526452512.920393"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "488"
+                  endingLineNumber = "488"
+                  offsetFromSymbolStart = "348">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "_cairo_gl_surface_fill_alpha_channel"
+                  moduleName = "GLESViewHarness"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jessebennett/Documents/UnsafeLibs/cairo-1.15.2-iOS/cairo/cairo-gl-private.h"
+                  timestampString = "526452512.929575"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "488"
+                  endingLineNumber = "488"
+                  offsetFromSymbolStart = "328">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "_cairo_gl_surface_finish"
+                  moduleName = "GLESViewHarness"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jessebennett/Documents/UnsafeLibs/cairo-1.15.2-iOS/cairo/cairo-gl-private.h"
+                  timestampString = "526452512.939932"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "488"
+                  endingLineNumber = "488"
+                  offsetFromSymbolStart = "460">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "_cairo_gl_surface_create_similar"
+                  moduleName = "GLESViewHarness"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jessebennett/Documents/UnsafeLibs/cairo-1.15.2-iOS/cairo/cairo-gl-private.h"
+                  timestampString = "526452512.950114"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "488"
+                  endingLineNumber = "488"
+                  offsetFromSymbolStart = "312">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "_cairo_gl_surface_map_to_image"
+                  moduleName = "GLESViewHarness"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jessebennett/Documents/UnsafeLibs/cairo-1.15.2-iOS/cairo/cairo-gl-private.h"
+                  timestampString = "526452512.959601"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "488"
+                  endingLineNumber = "488"
+                  offsetFromSymbolStart = "712">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "_cairo_gl_surface_map_to_image"
+                  moduleName = "GLESViewHarness"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jessebennett/Documents/UnsafeLibs/cairo-1.15.2-iOS/cairo/cairo-gl-private.h"
+                  timestampString = "526452512.970001"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "488"
+                  endingLineNumber = "488"
+                  offsetFromSymbolStart = "1208">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "_cairo_gl_gradient_destroy"
+                  moduleName = "GLESViewHarness"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jessebennett/Documents/UnsafeLibs/cairo-1.15.2-iOS/cairo/cairo-gl-private.h"
+                  timestampString = "526452512.979807"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "488"
+                  endingLineNumber = "488"
+                  offsetFromSymbolStart = "404">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
