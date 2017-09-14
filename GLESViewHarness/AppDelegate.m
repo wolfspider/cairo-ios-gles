@@ -297,6 +297,7 @@ trap_render (cairo_t *cr, cairo_surface_t *surface, int w, int h)
 		cairo_fill_preserve (cr);
 		cairo_set_source_rgba (cr, STROKE_R, STROKE_G, STROKE_B, STROKE_OPACITY);
 		cairo_set_line_width (cr, LINEWIDTH);
+		
 		cairo_stroke (cr);
 		
 		 
@@ -304,7 +305,7 @@ trap_render (cairo_t *cr, cairo_surface_t *surface, int w, int h)
 		
 	}
 	
-	cairo_surface_flush(surface);
+	cairo_gl_surface_swapbuffers(surface);
 
 }
 
@@ -337,20 +338,18 @@ void helloWorld(cairo_t* cr, cairo_surface_t *surface) {
 	
 	cairo_translate (cr, 80, 80);
 	cairo_set_source_rgba (cr, 0, 0, 0, 0.8);
-	cairo_set_font_size (cr, 15);
-	//cairo_select_font_face (cr, "San Francisco",CAIRO_FONT_SLANT_NORMAL, CAIRO_FONT_WEIGHT_BOLD);
+	cairo_set_font_size (cr, 14);
+	cairo_select_font_face (cr, "San Francisco",CAIRO_FONT_SLANT_NORMAL, CAIRO_FONT_WEIGHT_BOLD);
 	//cairo_font_options_set_antialias(cfo, CAIRO_ANTIALIAS_GRAY);
 	
 	cairo_show_text (cr, "Hello World");
-	
-	
 	
 	//cairo_gl_surface_swapbuffers (surface);
 	
 	cairo_restore (cr);
 	
 	//scale += 1;
-	
+	//cairo_gl_surface_swapbuffers(surface);
 	cairo_surface_flush(surface);
 	
 }
@@ -375,7 +374,7 @@ void helloWorld(cairo_t* cr, cairo_surface_t *surface) {
 	_increasing = YES;
 	_curRed = 0.0;
 	
-	self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+	self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds ]];
  
 	EAGLContext * context = [[EAGLContext alloc] initWithAPI:kEAGLRenderingAPIOpenGLES2];
 	context.multiThreaded = true;
@@ -384,7 +383,7 @@ void helloWorld(cairo_t* cr, cairo_surface_t *surface) {
 	view.delegate = self;
 	view.drawableDepthFormat = GLKViewDrawableDepthFormat24;
 	view.drawableStencilFormat = GLKViewDrawableStencilFormat8;
-	//view.drawableMultisample = GLKViewDrawableMultisample4X;
+	view.drawableMultisample = GLKViewDrawableMultisampleNone;
 	view.drawableColorFormat = GLKViewDrawableColorFormatRGBA8888;
 	
 	UIViewController* vc = [[UIViewController alloc]initWithNibName:nil bundle:nil];
@@ -395,14 +394,15 @@ void helloWorld(cairo_t* cr, cairo_surface_t *surface) {
 	
 	surface = cairo_gl_surface_create_for_view (device, (__bridge void *)(self), 400, 400);
 	
+	
 	cr = cairo_create (surface);
 	
 	// alocate memory for font options
 	cfo = cairo_font_options_create();
 	
-	cairo_font_options_set_antialias(cfo, CAIRO_ANTIALIAS_BEST);
+	cairo_font_options_set_antialias(cfo, CAIRO_ANTIALIAS_FAST);
 	
-	cairo_set_antialias(cr, CAIRO_ANTIALIAS_SUBPIXEL);
+	cairo_set_antialias(cr, CAIRO_ANTIALIAS_FAST);
 	
 	[self.window addSubview:view];
 	self.window.rootViewController = vc;

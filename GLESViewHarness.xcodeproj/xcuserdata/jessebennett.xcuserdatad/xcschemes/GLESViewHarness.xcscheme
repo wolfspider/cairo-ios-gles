@@ -69,6 +69,11 @@
       </CommandLineArguments>
       <EnvironmentVariables>
          <EnvironmentVariable
+            key = "CAIRO_HAS_QUARTZ_SURFACE"
+            value = "1"
+            isEnabled = "YES">
+         </EnvironmentVariable>
+         <EnvironmentVariable
             key = "CAIRO_HAS_QUARTZ_FONT"
             value = "1"
             isEnabled = "YES">
