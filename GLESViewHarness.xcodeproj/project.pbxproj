@@ -16,7 +16,8 @@
 		AB31F8521E597BA8006FDC31 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB31F8511E597BA8006FDC31 /* GLKit.framework */; };
 		AB31F8541E597F99006FDC31 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB31F8531E597F99006FDC31 /* OpenGLES.framework */; };
 		AB31F8561E597FA5006FDC31 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB31F8551E597FA5006FDC31 /* QuartzCore.framework */; };
-		AB3D3B521F6A219500C429D5 /* libpixman-1.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AB0654C81E66342400CE15A3 /* libpixman-1.a */; };
+		ABAD84C01F6F3AFB008261E4 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABAD84BF1F6F3AFB008261E4 /* CoreText.framework */; };
+		ABAD84C11F6F3B30008261E4 /* libpixman-1.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AB0654C81E66342400CE15A3 /* libpixman-1.a */; };
 		ABB1611C1F60C22A00840625 /* libcairo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AB3A9F3A1E5C2EB400649B19 /* libcairo.a */; };
 /* End PBXBuildFile section */
 
@@ -56,6 +57,7 @@
 		AB3A9D891E5C20BE00649B19 /* cairo.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = cairo.xcodeproj; path = "../../UnsafeLibs/cairo-1.15.2-iOS/cairo.xcodeproj"; sourceTree = "<group>"; };
 		AB3A9D901E5C211C00649B19 /* libcairo.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcairo.a; path = "../../UnsafeLibs/cairo-1.15.2-iOS/build/Debug-iphoneos/libcairo.a"; sourceTree = "<group>"; };
 		AB5E8C7E1E693029002E2B1C /* libpixman-1_armv7.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libpixman-1_armv7.a"; sourceTree = "<group>"; };
+		ABAD84BF1F6F3AFB008261E4 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,9 +66,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				AB31F8561E597FA5006FDC31 /* QuartzCore.framework in Frameworks */,
+				ABAD84C01F6F3AFB008261E4 /* CoreText.framework in Frameworks */,
 				AB31F8541E597F99006FDC31 /* OpenGLES.framework in Frameworks */,
 				AB31F8521E597BA8006FDC31 /* GLKit.framework in Frameworks */,
-				AB3D3B521F6A219500C429D5 /* libpixman-1.a in Frameworks */,
+				ABAD84C11F6F3B30008261E4 /* libpixman-1.a in Frameworks */,
 				ABB1611C1F60C22A00840625 /* libcairo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -122,6 +125,7 @@
 		AB31F8501E597BA8006FDC31 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				ABAD84BF1F6F3AFB008261E4 /* CoreText.framework */,
 				AB3A9D901E5C211C00649B19 /* libcairo.a */,
 				AB31F8551E597FA5006FDC31 /* QuartzCore.framework */,
 				AB31F8531E597F99006FDC31 /* OpenGLES.framework */,

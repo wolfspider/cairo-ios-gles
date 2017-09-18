@@ -305,7 +305,9 @@ trap_render (cairo_t *cr, cairo_surface_t *surface, int w, int h)
 		
 	}
 	
-	cairo_gl_surface_swapbuffers(surface);
+	cairo_surface_flush(surface);
+	
+	//cairo_gl_surface_swapbuffers(surface);
 
 }
 
@@ -339,10 +341,10 @@ void helloWorld(cairo_t* cr, cairo_surface_t *surface) {
 	cairo_translate (cr, 80, 80);
 	cairo_set_source_rgba (cr, 0, 0, 0, 0.8);
 	cairo_set_font_size (cr, 14);
-	cairo_select_font_face (cr, "San Francisco",CAIRO_FONT_SLANT_NORMAL, CAIRO_FONT_WEIGHT_BOLD);
+	//cairo_select_font_face (cr, "San Francisco",CAIRO_FONT_SLANT_NORMAL, CAIRO_FONT_WEIGHT_BOLD);
 	//cairo_font_options_set_antialias(cfo, CAIRO_ANTIALIAS_GRAY);
 	
-	cairo_show_text (cr, "Hello World");
+	cairo_text_path(cr, "Hello World");
 	
 	//cairo_gl_surface_swapbuffers (surface);
 	
@@ -350,7 +352,7 @@ void helloWorld(cairo_t* cr, cairo_surface_t *surface) {
 	
 	//scale += 1;
 	//cairo_gl_surface_swapbuffers(surface);
-	cairo_surface_flush(surface);
+	//cairo_surface_flush(surface);
 	
 }
 
@@ -363,7 +365,7 @@ void helloWorld(cairo_t* cr, cairo_surface_t *surface) {
 	BOOL _increasing;
 	cairo_surface_t *surface;
 	cairo_t *cr;
-	cairo_font_options_t *cfo;
+	//cairo_font_options_t *cfo;
 	cairo_device_t *device;
 }
 
@@ -398,9 +400,9 @@ void helloWorld(cairo_t* cr, cairo_surface_t *surface) {
 	cr = cairo_create (surface);
 	
 	// alocate memory for font options
-	cfo = cairo_font_options_create();
+	//cfo = cairo_font_options_create();
 	
-	cairo_font_options_set_antialias(cfo, CAIRO_ANTIALIAS_FAST);
+	//cairo_font_options_set_antialias(cfo, CAIRO_ANTIALIAS_FAST);
 	
 	cairo_set_antialias(cr, CAIRO_ANTIALIAS_FAST);
 	
@@ -411,6 +413,7 @@ void helloWorld(cairo_t* cr, cairo_surface_t *surface) {
 	[self.window makeKeyAndVisible];
 	
 	view.enableSetNeedsDisplay = NO;
+
 	CADisplayLink* displayLink = [CADisplayLink displayLinkWithTarget:self selector:@selector(render:)];
 	[displayLink addToRunLoop:[NSRunLoop currentRunLoop] forMode:NSDefaultRunLoopMode];
 	
@@ -424,9 +427,9 @@ void helloWorld(cairo_t* cr, cairo_surface_t *surface) {
 	
 	GLKView * view = [self.window.subviews objectAtIndex:0];
 	
-	trap_render(cr, surface, WIDTH, HEIGHT);
+	//trap_render(cr, surface, WIDTH, HEIGHT);
 		
-	//helloWorld(cr, surface);
+	helloWorld(cr, surface);
 	
 	[view display];
 		
