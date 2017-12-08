@@ -153,12 +153,13 @@ trap_render (cairo_t *cr, cairo_surface_t *surface, int w, int h)
 	int i;
 	int pass;
 	
+	/*
 	cairo_set_fill_rule (cr, CAIRO_FILL_RULE_EVEN_ODD);
 	
 	cairo_set_source_rgba (cr, 1, 1, 1, 1);
 	cairo_set_operator (cr, CAIRO_OPERATOR_SOURCE);
 	cairo_rectangle (cr, 0, 0, w, h);
-	cairo_fill (cr);
+	cairo_fill (cr);*/
 	cairo_set_operator (cr, CAIRO_OPERATOR_OVER);
 	cairo_set_source_rgba (cr, 0.75, 0.75, 0.75, 1.0);
 	cairo_set_line_width (cr, 1.0);
@@ -335,15 +336,15 @@ void helloWorld(cairo_t* cr, cairo_surface_t *surface) {
 	//r = drand48();
 	//g = drand48();
 	//b = drand48();
+	cairo_select_font_face (cr, "Times New Roman",CAIRO_FONT_SLANT_NORMAL, CAIRO_FONT_WEIGHT_BOLD);
+	cairo_set_font_size (cr, 24);
+	cairo_set_source_rgb (cr, 0, 0, 0);
 	
 	cairo_save (cr);
+
+	cairo_move_to (cr, 100, 100);
 	
-	cairo_translate (cr, 80, 80);
-	cairo_set_source_rgba (cr, 0, 0, 0, 0.8);
-	cairo_set_font_size (cr, 14);
-	//cairo_select_font_face (cr, "San Francisco",CAIRO_FONT_SLANT_NORMAL, CAIRO_FONT_WEIGHT_BOLD);
-	//cairo_font_options_set_antialias(cfo, CAIRO_ANTIALIAS_GRAY);
-	
+	//cairo_show_text(cr, "Hello World");
 	cairo_text_path(cr, "Hello World");
 	
 	//cairo_gl_surface_swapbuffers (surface);
@@ -356,6 +357,37 @@ void helloWorld(cairo_t* cr, cairo_surface_t *surface) {
 	
 }
 
+void drawPNG(cairo_t* cr, cairo_surface_t *image) {
+	
+	if(cr == NULL || cairo_status(cr) == CAIRO_STATUS_NULL_POINTER)
+		{
+		return;
+		}
+	
+	
+	cairo_set_fill_rule (cr, CAIRO_FILL_RULE_EVEN_ODD);
+	
+	cairo_set_source_rgba (cr, 1, 1, 1, 1);
+	cairo_set_operator (cr, CAIRO_OPERATOR_SOURCE);
+	cairo_rectangle (cr, 0, 0, 400, 400);
+	cairo_fill (cr);
+	cairo_set_operator (cr, CAIRO_OPERATOR_OVER);
+	
+	cairo_save(cr);
+	
+	cairo_translate(cr, 0, 0);
+	cairo_rectangle (cr, 0, 0, 400, 400);
+	cairo_clip(cr);
+	cairo_new_path(cr);
+	cairo_set_source_surface(cr, image, 0, 0);
+	cairo_paint(cr);
+	
+	cairo_restore(cr);
+	
+	cairo_surface_flush(image);
+	
+}
+
 @interface AppDelegate ()
 
 @end
@@ -364,8 +396,9 @@ void helloWorld(cairo_t* cr, cairo_surface_t *surface) {
 	float _curRed;
 	BOOL _increasing;
 	cairo_surface_t *surface;
+	cairo_surface_t *image;
 	cairo_t *cr;
-	//cairo_font_options_t *cfo;
+	cairo_font_options_t *cfo;
 	cairo_device_t *device;
 }
 
@@ -379,7 +412,7 @@ void helloWorld(cairo_t* cr, cairo_surface_t *surface) {
 	self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds ]];
  
 	EAGLContext * context = [[EAGLContext alloc] initWithAPI:kEAGLRenderingAPIOpenGLES2];
-	context.multiThreaded = true;
+	//context.multiThreaded = true;
 	GLKView *view = [[GLKView alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
 	view.context = context;
 	view.delegate = self;
@@ -388,6 +421,8 @@ void helloWorld(cairo_t* cr, cairo_surface_t *surface) {
 	view.drawableMultisample = GLKViewDrawableMultisampleNone;
 	view.drawableColorFormat = GLKViewDrawableColorFormatRGBA8888;
 	
+	[EAGLContext setCurrentContext:context];
+	
 	UIViewController* vc = [[UIViewController alloc]initWithNibName:nil bundle:nil];
 	
 	device = cairo_nsgles_device_create ((__bridge void *)(context));
@@ -395,9 +430,14 @@ void helloWorld(cairo_t* cr, cairo_surface_t *surface) {
 	cairo_gl_device_set_thread_aware(device, TRUE);
 	
 	surface = cairo_gl_surface_create_for_view (device, (__bridge void *)(self), 400, 400);
-	
-	
+
 	cr = cairo_create (surface);
+	
+	NSString* filePath = [[NSBundle mainBundle] pathForResource:@"snake"
+														 ofType:@"png"];
+	const char *pngPath = [filePath UTF8String];
+	
+	surface = cairo_image_surface_create_from_png(pngPath);
 	
 	// alocate memory for font options
 	//cfo = cairo_font_options_create();
@@ -413,7 +453,7 @@ void helloWorld(cairo_t* cr, cairo_surface_t *surface) {
 	[self.window makeKeyAndVisible];
 	
 	view.enableSetNeedsDisplay = NO;
-
+	
 	CADisplayLink* displayLink = [CADisplayLink displayLinkWithTarget:self selector:@selector(render:)];
 	[displayLink addToRunLoop:[NSRunLoop currentRunLoop] forMode:NSDefaultRunLoopMode];
 	
@@ -427,9 +467,11 @@ void helloWorld(cairo_t* cr, cairo_surface_t *surface) {
 	
 	GLKView * view = [self.window.subviews objectAtIndex:0];
 	
-	//trap_render(cr, surface, WIDTH, HEIGHT);
+    drawPNG(cr, surface);
 		
-	helloWorld(cr, surface);
+	trap_render(cr, surface, WIDTH, HEIGHT);
+		
+	//helloWorld(cr, surface);
 	
 	[view display];
 		
@@ -466,9 +508,7 @@ void helloWorld(cairo_t* cr, cairo_surface_t *surface) {
 #pragma mark - GLKViewDelegate
 
 - (void)glkView:(GLKView *)view drawInRect:(CGRect)rect {
- 
-	
-	
+		
 }
 
 #pragma mark - GLKViewControllerDelegate

@@ -10,12 +10,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "GLESViewHarness/AppDelegate.m"
-            timestampString = "524285523.395841"
+            timestampString = "534467707.19468"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "284"
-            endingLineNumber = "284"
-            landmarkName = "trap_render()"
+            startingLineNumber = "285"
+            endingLineNumber = "285"
+            landmarkName = "trap_render"
             landmarkType = "9">
          </BreakpointContent>
       </BreakpointProxy>
@@ -26,12 +26,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../../UnsafeLibs/cairo-1.15.2-iOS/cairo/cairo-gl-device.c"
-            timestampString = "524287680.301019"
+            timestampString = "534406223.974546"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "198"
             endingLineNumber = "198"
-            landmarkName = "_cairo_gl_context_init()"
+            landmarkName = "_cairo_gl_context_init"
             landmarkType = "9">
          </BreakpointContent>
       </BreakpointProxy>
@@ -47,7 +47,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "255"
             endingLineNumber = "255"
-            landmarkName = "can_use_msaa_compositor()"
+            landmarkName = "can_use_msaa_compositor"
             landmarkType = "9">
          </BreakpointContent>
       </BreakpointProxy>
@@ -58,12 +58,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../../UnsafeLibs/cairo-1.15.2-iOS/cairo/cairo-gl-device.c"
-            timestampString = "524443017.854522"
+            timestampString = "534406223.974927"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "362"
             endingLineNumber = "362"
-            landmarkName = "_cairo_gl_ensure_msaa_gles_framebuffer()"
+            landmarkName = "_cairo_gl_ensure_msaa_gles_framebuffer"
             landmarkType = "9">
          </BreakpointContent>
       </BreakpointProxy>
@@ -74,12 +74,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../../UnsafeLibs/cairo-1.15.2-iOS/cairo/cairo-gl-device.c"
-            timestampString = "527040998.158958"
+            timestampString = "534406223.975155"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "721"
             endingLineNumber = "721"
-            landmarkName = "_cairo_gl_context_set_destination()"
+            landmarkName = "_cairo_gl_context_set_destination"
             landmarkType = "9">
          </BreakpointContent>
       </BreakpointProxy>
@@ -90,12 +90,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../../UnsafeLibs/cairo-1.15.2-iOS/cairo/cairo.c"
-            timestampString = "526437517.913921"
+            timestampString = "534361009.072464"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "3218"
             endingLineNumber = "3218"
-            landmarkName = "cairo_show_text()"
+            landmarkName = "cairo_show_text"
             landmarkType = "9">
          </BreakpointContent>
       </BreakpointProxy>
@@ -106,12 +106,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../../UnsafeLibs/cairo-1.15.2-iOS/cairo/cairo.c"
-            timestampString = "526442955.528804"
+            timestampString = "534361009.073222"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "3263"
             endingLineNumber = "3263"
-            landmarkName = "cairo_show_text()"
+            landmarkName = "cairo_show_text"
             landmarkType = "9">
          </BreakpointContent>
       </BreakpointProxy>
@@ -695,12 +695,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../../UnsafeLibs/cairo-1.15.2-iOS/cairo/cairo-nsgles-context.m"
-            timestampString = "527303210.323293"
+            timestampString = "534361009.073623"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "173"
             endingLineNumber = "173"
-            landmarkName = "cairo_nsgles_device_get_context()"
+            landmarkName = "cairo_nsgles_device_get_context"
             landmarkType = "9">
          </BreakpointContent>
       </BreakpointProxy>
@@ -716,7 +716,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "1437"
             endingLineNumber = "1437"
-            landmarkName = "_cairo_quartz_surface_map_to_image()"
+            landmarkName = "_cairo_quartz_surface_map_to_image"
             landmarkType = "9">
          </BreakpointContent>
       </BreakpointProxy>
@@ -727,12 +727,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../../UnsafeLibs/cairo-1.15.2-iOS/cairo/cairo-gl-surface.c"
-            timestampString = "527363875.469735"
+            timestampString = "534467707.197829"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "519"
             endingLineNumber = "519"
-            landmarkName = "cairo_gl_surface_create()"
+            landmarkName = "cairo_gl_surface_create"
             landmarkType = "9">
          </BreakpointContent>
       </BreakpointProxy>
@@ -743,12 +743,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../../UnsafeLibs/cairo-1.15.2-iOS/cairo/cairo-gl-surface.c"
-            timestampString = "527363875.469735"
+            timestampString = "534467707.1981"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "555"
             endingLineNumber = "555"
-            landmarkName = "cairo_gl_surface_create()"
+            landmarkName = "cairo_gl_surface_create"
             landmarkType = "9">
          </BreakpointContent>
       </BreakpointProxy>
@@ -764,7 +764,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "2050"
             endingLineNumber = "2050"
-            landmarkName = "_cairo_quartz_cg_glyphs()"
+            landmarkName = "_cairo_quartz_cg_glyphs"
             landmarkType = "9">
          </BreakpointContent>
       </BreakpointProxy>
@@ -775,12 +775,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../../UnsafeLibs/cairo-1.15.2-iOS/cairo/cairo-gl-glyphs.c"
-            timestampString = "527313889.950072"
+            timestampString = "534361009.075562"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "322"
             endingLineNumber = "322"
-            landmarkName = "render_glyphs()"
+            landmarkName = "render_glyphs"
             landmarkType = "9">
          </BreakpointContent>
       </BreakpointProxy>
@@ -791,12 +791,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../../UnsafeLibs/cairo-1.15.2-iOS/cairo/cairo-gl-glyphs.c"
-            timestampString = "527313893.913777"
+            timestampString = "534361009.076274"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "297"
             endingLineNumber = "297"
-            landmarkName = "render_glyphs()"
+            landmarkName = "render_glyphs"
             landmarkType = "9">
          </BreakpointContent>
       </BreakpointProxy>
@@ -807,12 +807,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../../UnsafeLibs/cairo-1.15.2-iOS/cairo/cairo-gl-glyphs.c"
-            timestampString = "527313906.934868"
+            timestampString = "534361009.076516"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "286"
             endingLineNumber = "286"
-            landmarkName = "render_glyphs()"
+            landmarkName = "render_glyphs"
             landmarkType = "9">
          </BreakpointContent>
       </BreakpointProxy>
@@ -823,28 +823,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../../UnsafeLibs/cairo-1.15.2-iOS/cairo/cairo-gl-glyphs.c"
-            timestampString = "527313910.561392"
+            timestampString = "534361009.076748"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "274"
             endingLineNumber = "274"
-            landmarkName = "render_glyphs()"
-            landmarkType = "9">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "../../UnsafeLibs/cairo-1.15.2-iOS/cairo/cairo-gl-glyphs.c"
-            timestampString = "527313918.252703"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "251"
-            endingLineNumber = "251"
-            landmarkName = "render_glyphs()"
+            landmarkName = "render_glyphs"
             landmarkType = "9">
          </BreakpointContent>
       </BreakpointProxy>
@@ -855,12 +839,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../../UnsafeLibs/cairo-1.15.2-iOS/cairo/cairo-gl-glyphs.c"
-            timestampString = "527314052.060649"
+            timestampString = "534361009.077208"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "335"
             endingLineNumber = "335"
-            landmarkName = "render_glyphs()"
+            landmarkName = "render_glyphs"
             landmarkType = "9">
          </BreakpointContent>
       </BreakpointProxy>
@@ -1443,13 +1427,29 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "../../UnsafeLibs/cairo-1.15.2-iOS/cairo/cairo-gl-surface.c"
-            timestampString = "527379483.984133"
+            filePath = "../../UnsafeLibs/cairo-1.15.2-iOS/cairo/cairo-gl-traps-compositor.c"
+            timestampString = "534361009.078477"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "911"
-            endingLineNumber = "911"
-            landmarkName = "_cairo_gl_surface_draw_image()"
+            startingLineNumber = "367"
+            endingLineNumber = "367"
+            landmarkName = "traps_to_operand"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../UnsafeLibs/cairo-1.15.2-iOS/cairo/cairo-gl-operand.c"
+            timestampString = "534361009.079893"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "171"
+            endingLineNumber = "171"
+            landmarkName = "_cairo_gl_subsurface_clone_operand_init"
             landmarkType = "9">
          </BreakpointContent>
       </BreakpointProxy>
@@ -1460,44 +1460,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../../UnsafeLibs/cairo-1.15.2-iOS/cairo/cairo-gl-surface.c"
-            timestampString = "527379483.984133"
+            timestampString = "534467707.200045"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "887"
-            endingLineNumber = "887"
-            landmarkName = "_cairo_gl_surface_draw_image()"
-            landmarkType = "9">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "../../UnsafeLibs/cairo-1.15.2-iOS/cairo/cairo-gl-surface.c"
-            timestampString = "527379483.984133"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "868"
-            endingLineNumber = "868"
-            landmarkName = "_cairo_gl_surface_draw_image()"
-            landmarkType = "9">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "../../UnsafeLibs/cairo-1.15.2-iOS/cairo/cairo-gl-surface.c"
-            timestampString = "527378780.47512"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "812"
-            endingLineNumber = "812"
-            landmarkName = "_cairo_gl_surface_draw_paint()"
+            startingLineNumber = "593"
+            endingLineNumber = "593"
+            landmarkName = "cairo_gl_surface_create_for_texture"
             landmarkType = "9">
          </BreakpointContent>
       </BreakpointProxy>
