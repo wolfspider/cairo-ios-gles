@@ -6,6 +6,7 @@ libpixman-1_X86_64 is for the simulator and libpixman-1_armv7 is for my aging IP
 since the iOS 10.3 update which broke it. I built pixman with a modified Mapnik makefile so there is nothing unique about it I just
 need to sort out the makefile situation to get an end to end build. Very WIP for now but good enough to get it up here on GH.
 
+Just click on the images to view these videos on YouTube
 
 [![Cairo IOS](http://i3.ytimg.com/vi/6RsNPNRoXqo/maxresdefault.jpg)](https://youtu.be/6RsNPNRoXqo)
 
