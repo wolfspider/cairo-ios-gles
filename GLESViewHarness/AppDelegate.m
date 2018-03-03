@@ -15,8 +15,8 @@
 #import <cairo.h>
 #import <cairo-gl.h>
 
-#define WIDTH 400
-#define HEIGHT 400
+#define WIDTH 750
+#define HEIGHT 1334
 
 #define LINEWIDTH 1.5
 
@@ -159,13 +159,13 @@ trap_render (cairo_t *cr, cairo_surface_t *surface, int w, int h)
 	cairo_set_source_rgba (cr, 1, 1, 1, 1);
 	cairo_set_operator (cr, CAIRO_OPERATOR_SOURCE);
 	cairo_rectangle (cr, 0, 0, w, h);
-	cairo_fill (cr);*/
+	cairo_fill (cr); */
 	cairo_set_operator (cr, CAIRO_OPERATOR_OVER);
 	cairo_set_source_rgba (cr, 0.75, 0.75, 0.75, 1.0);
 	cairo_set_line_width (cr, 1.0);
 	
 	cairo_save (cr); {
-		cairo_scale (cr, (double) w / 512.0, (double) h / 512.0);
+		cairo_scale (cr, 1, 1);
 		
 		cairo_save (cr); {
 			cairo_translate (cr, -10.0, -10.0);
@@ -307,8 +307,6 @@ trap_render (cairo_t *cr, cairo_surface_t *surface, int w, int h)
 	}
 	
 	cairo_surface_flush(surface);
-	
-	//cairo_gl_surface_swapbuffers(surface);
 
 }
 
@@ -336,24 +334,24 @@ void helloWorld(cairo_t* cr, cairo_surface_t *surface) {
 	//r = drand48();
 	//g = drand48();
 	//b = drand48();
-	cairo_select_font_face (cr, "Times New Roman",CAIRO_FONT_SLANT_NORMAL, CAIRO_FONT_WEIGHT_BOLD);
+	cairo_select_font_face (cr, "ARIAL_IX",CAIRO_FONT_SLANT_NORMAL, CAIRO_FONT_WEIGHT_BOLD);
 	cairo_set_font_size (cr, 24);
 	cairo_set_source_rgb (cr, 0, 0, 0);
 	
-	cairo_save (cr);
-
+	//cairo_save (cr);
+	cairo_translate(cr, 0, 0);
 	cairo_move_to (cr, 100, 100);
 	
-	//cairo_show_text(cr, "Hello World");
-	cairo_text_path(cr, "Hello World");
+	cairo_show_text(cr, "Hello World");
+	//cairo_text_path(cr, "Hello World");
 	
 	//cairo_gl_surface_swapbuffers (surface);
 	
-	cairo_restore (cr);
+	//cairo_restore (cr);
 	
 	//scale += 1;
 	//cairo_gl_surface_swapbuffers(surface);
-	//cairo_surface_flush(surface);
+	cairo_surface_flush(surface);
 	
 }
 
@@ -369,14 +367,14 @@ void drawPNG(cairo_t* cr, cairo_surface_t *image) {
 	
 	cairo_set_source_rgba (cr, 1, 1, 1, 1);
 	cairo_set_operator (cr, CAIRO_OPERATOR_SOURCE);
-	cairo_rectangle (cr, 0, 0, 400, 400);
+	cairo_rectangle (cr, 0, 0, 750, 1334);
 	cairo_fill (cr);
 	cairo_set_operator (cr, CAIRO_OPERATOR_OVER);
 	
 	cairo_save(cr);
 	
-	cairo_translate(cr, 0, 0);
-	cairo_rectangle (cr, 0, 0, 400, 400);
+	cairo_translate(cr, 375, 650);
+	cairo_rectangle (cr, 0, 0, 400, 300);
 	cairo_clip(cr);
 	cairo_new_path(cr);
 	cairo_set_source_surface(cr, image, 0, 0);
@@ -388,6 +386,7 @@ void drawPNG(cairo_t* cr, cairo_surface_t *image) {
 	
 }
 
+
 @interface AppDelegate ()
 
 @end
@@ -396,7 +395,6 @@ void drawPNG(cairo_t* cr, cairo_surface_t *image) {
 	float _curRed;
 	BOOL _increasing;
 	cairo_surface_t *surface;
-	cairo_surface_t *image;
 	cairo_t *cr;
 	cairo_font_options_t *cfo;
 	cairo_device_t *device;
@@ -412,7 +410,7 @@ void drawPNG(cairo_t* cr, cairo_surface_t *image) {
 	self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds ]];
  
 	EAGLContext * context = [[EAGLContext alloc] initWithAPI:kEAGLRenderingAPIOpenGLES2];
-	//context.multiThreaded = true;
+	context.multiThreaded = true;
 	GLKView *view = [[GLKView alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
 	view.context = context;
 	view.delegate = self;
@@ -420,6 +418,14 @@ void drawPNG(cairo_t* cr, cairo_surface_t *image) {
 	view.drawableStencilFormat = GLKViewDrawableStencilFormat8;
 	view.drawableMultisample = GLKViewDrawableMultisampleNone;
 	view.drawableColorFormat = GLKViewDrawableColorFormatRGBA8888;
+	
+	UITextView *text = [[UITextView alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+	[text setBackgroundColor: [UIColor clearColor]];
+	[text setTextColor: [UIColor blackColor]];
+	[text setFont: [UIFont fontWithName:@"ArialMT" size:30]];
+	UIEdgeInsets insets = UIEdgeInsetsMake(600, 10, 0, 0);
+	[text setContentInset:insets];
+	text.text = @"Testing testing 123";
 	
 	[EAGLContext setCurrentContext:context];
 	
@@ -429,7 +435,7 @@ void drawPNG(cairo_t* cr, cairo_surface_t *image) {
 	
 	cairo_gl_device_set_thread_aware(device, TRUE);
 	
-	surface = cairo_gl_surface_create_for_view (device, (__bridge void *)(self), 400, 400);
+	surface = cairo_gl_surface_create_for_view (device, (__bridge void *)(self), 750, 1334);
 
 	cr = cairo_create (surface);
 	
@@ -440,13 +446,14 @@ void drawPNG(cairo_t* cr, cairo_surface_t *image) {
 	surface = cairo_image_surface_create_from_png(pngPath);
 	
 	// alocate memory for font options
-	//cfo = cairo_font_options_create();
+	cfo = cairo_font_options_create();
 	
-	//cairo_font_options_set_antialias(cfo, CAIRO_ANTIALIAS_FAST);
+	cairo_font_options_set_antialias(cfo, CAIRO_ANTIALIAS_FAST);
 	
 	cairo_set_antialias(cr, CAIRO_ANTIALIAS_FAST);
 	
 	[self.window addSubview:view];
+	[self.window addSubview:text];
 	self.window.rootViewController = vc;
 	
 	self.window.backgroundColor = [UIColor whiteColor];
@@ -471,7 +478,7 @@ void drawPNG(cairo_t* cr, cairo_surface_t *image) {
 		
 	trap_render(cr, surface, WIDTH, HEIGHT);
 		
-	//helloWorld(cr, surface);
+	helloWorld(cr, surface);
 	
 	[view display];
 		
