@@ -1,0 +1,37 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "A2D1F548967E31BFC0DF88624ADF69549D7F15F2",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "13CBF31D155901DF02641B106B84A9B0B9519F6F" : 9223372036854775807,
+    "B69878B0CFCBE54F0C73617B57B9E09DB723640E" : 9223372036854775807,
+    "A2D1F548967E31BFC0DF88624ADF69549D7F15F2" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "8CAB7379-42A2-468D-91D0-110ED39C09AB",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "13CBF31D155901DF02641B106B84A9B0B9519F6F" : "..\/UnsafeLibs\/cairo-1.15.2-iOS",
+    "B69878B0CFCBE54F0C73617B57B9E09DB723640E" : "..\/UnsafeLibs\/pixman-0.34.0-iOS",
+    "A2D1F548967E31BFC0DF88624ADF69549D7F15F2" : "GLESViewHarness\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "GLESViewHarness",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "GLESViewHarness.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/yoshikiohshima\/cairo-1.15.2-iOS.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "13CBF31D155901DF02641B106B84A9B0B9519F6F"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/wolfspider\/cairo-ios-gles.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "A2D1F548967E31BFC0DF88624ADF69549D7F15F2"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/yoshikiohshima\/pixman-0.34.0-iOS.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "B69878B0CFCBE54F0C73617B57B9E09DB723640E"
+    }
+  ]
+}
