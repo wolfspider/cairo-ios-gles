@@ -478,7 +478,7 @@ void drawPNG(cairo_t* cr, cairo_surface_t *image) {
 		
 	trap_render(cr, surface, WIDTH, HEIGHT);
 		
-	helloWorld(cr, surface);
+	//helloWorld(cr, surface);
 	
 	[view display];
 		

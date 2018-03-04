@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AB1884EE204BB6E2008ED5AE /* libcairo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AB1884ED204BB5A3008ED5AE /* libcairo.a */; };
+		AB188509204BBACC008ED5AE /* libpixman-a.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AB18850A204BBACC008ED5AE /* libpixman-a.a */; };
+		AB18850C204BBB0E008ED5AE /* libFreetype2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AB18850D204BBB0E008ED5AE /* libFreetype2.a */; };
+		AB188510204BBBD8008ED5AE /* libz.1.2.8.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = ABE989431FDA37B900303F5D /* libz.1.2.8.tbd */; };
 		AB31F83B1E59797C006FDC31 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AB31F83A1E59797C006FDC31 /* main.m */; };
 		AB31F83E1E59797C006FDC31 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AB31F83D1E59797C006FDC31 /* AppDelegate.m */; };
 		AB31F8411E59797C006FDC31 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB31F8401E59797C006FDC31 /* ViewController.m */; };
@@ -18,30 +22,25 @@
 		AB31F8561E597FA5006FDC31 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB31F8551E597FA5006FDC31 /* QuartzCore.framework */; };
 		AB7A76641FDB514800AC8F54 /* snake.png in Resources */ = {isa = PBXBuildFile; fileRef = AB7A76631FDB514700AC8F54 /* snake.png */; };
 		ABAD84C01F6F3AFB008261E4 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABAD84BF1F6F3AFB008261E4 /* CoreText.framework */; };
-		ABB1611C1F60C22A00840625 /* libcairo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AB3A9F3A1E5C2EB400649B19 /* libcairo.a */; };
 		ABC803DD1FD8E4F8002745E9 /* IMG_0052.png in Resources */ = {isa = PBXBuildFile; fileRef = ABC803DC1FD8E4F8002745E9 /* IMG_0052.png */; };
-		ABE989411FDA354D00303F5D /* libpng.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ABE989421FDA354D00303F5D /* libpng.a */; };
-		ABE989441FDA37B900303F5D /* libz.1.2.8.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = ABE989431FDA37B900303F5D /* libz.1.2.8.tbd */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		AB3A9F391E5C2EB400649B19 /* PBXContainerItemProxy */ = {
+		AB1884EC204BB5A3008ED5AE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = AB3A9D891E5C20BE00649B19 /* cairo.xcodeproj */;
+			containerPortal = AB1884E5204BB5A3008ED5AE /* cairo.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = BDFF7E841D9E0D810056051D;
-			remoteInfo = cairo;
-		};
-		AB3A9F411E5C3CD000649B19 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = AB3A9D891E5C20BE00649B19 /* cairo.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = BDFF7E831D9E0D810056051D;
 			remoteInfo = cairo;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AB1884E5204BB5A3008ED5AE /* cairo.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = cairo.xcodeproj; path = "../cairo-1.15.2-iOS/cairo.xcodeproj"; sourceTree = "<group>"; };
+		AB1884F0204BB702008ED5AE /* libpixman-a.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libpixman-a.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB18850A204BBACC008ED5AE /* libpixman-a.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libpixman-a.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB18850D204BBB0E008ED5AE /* libFreetype2.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libFreetype2.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB18850F204BBB66008ED5AE /* libpng.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libpng.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB31F8361E59797C006FDC31 /* GLESViewHarness.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GLESViewHarness.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB31F83A1E59797C006FDC31 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		AB31F83C1E59797C006FDC31 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -55,7 +54,6 @@
 		AB31F8511E597BA8006FDC31 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
 		AB31F8531E597F99006FDC31 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		AB31F8551E597FA5006FDC31 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
-		AB3A9D891E5C20BE00649B19 /* cairo.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = cairo.xcodeproj; path = "../../UnsafeLibs/cairo-1.15.2-iOS/cairo.xcodeproj"; sourceTree = "<group>"; };
 		AB3A9D901E5C211C00649B19 /* libcairo.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcairo.a; path = "../../UnsafeLibs/cairo-1.15.2-iOS/build/Debug-iphoneos/libcairo.a"; sourceTree = "<group>"; };
 		AB7A76631FDB514700AC8F54 /* snake.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = snake.png; sourceTree = "<group>"; };
 		ABAD84BF1F6F3AFB008261E4 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
@@ -73,19 +71,28 @@
 				ABAD84C01F6F3AFB008261E4 /* CoreText.framework in Frameworks */,
 				AB31F8541E597F99006FDC31 /* OpenGLES.framework in Frameworks */,
 				AB31F8521E597BA8006FDC31 /* GLKit.framework in Frameworks */,
-				ABE989441FDA37B900303F5D /* libz.1.2.8.tbd in Frameworks */,
-				ABE989411FDA354D00303F5D /* libpng.a in Frameworks */,
-				ABB1611C1F60C22A00840625 /* libcairo.a in Frameworks */,
+				AB188510204BBBD8008ED5AE /* libz.1.2.8.tbd in Frameworks */,
+				AB188509204BBACC008ED5AE /* libpixman-a.a in Frameworks */,
+				AB18850C204BBB0E008ED5AE /* libFreetype2.a in Frameworks */,
+				AB1884EE204BB6E2008ED5AE /* libcairo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AB1884E6204BB5A3008ED5AE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AB1884ED204BB5A3008ED5AE /* libcairo.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		AB31F82D1E59797C006FDC31 = {
 			isa = PBXGroup;
 			children = (
-				AB3A9D891E5C20BE00649B19 /* cairo.xcodeproj */,
+				AB1884E5204BB5A3008ED5AE /* cairo.xcodeproj */,
 				AB31F8381E59797C006FDC31 /* GLESViewHarness */,
 				AB31F8371E59797C006FDC31 /* Products */,
 				AB31F8501E597BA8006FDC31 /* Frameworks */,
@@ -133,19 +140,15 @@
 				ABAD84BF1F6F3AFB008261E4 /* CoreText.framework */,
 				AB3A9D901E5C211C00649B19 /* libcairo.a */,
 				AB31F8551E597FA5006FDC31 /* QuartzCore.framework */,
+				AB18850F204BBB66008ED5AE /* libpng.a */,
+				AB18850A204BBACC008ED5AE /* libpixman-a.a */,
+				AB18850D204BBB0E008ED5AE /* libFreetype2.a */,
+				AB1884F0204BB702008ED5AE /* libpixman-a.a */,
 				AB31F8531E597F99006FDC31 /* OpenGLES.framework */,
 				ABE989421FDA354D00303F5D /* libpng.a */,
 				AB31F8511E597BA8006FDC31 /* GLKit.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		AB3A9F361E5C2EB400649B19 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				AB3A9F3A1E5C2EB400649B19 /* libcairo.a */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -162,7 +165,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				AB3A9F421E5C3CD000649B19 /* PBXTargetDependency */,
 			);
 			name = GLESViewHarness;
 			productName = GLESViewHarness;
@@ -198,8 +200,8 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = AB3A9F361E5C2EB400649B19 /* Products */;
-					ProjectRef = AB3A9D891E5C20BE00649B19 /* cairo.xcodeproj */;
+					ProductGroup = AB1884E6204BB5A3008ED5AE /* Products */;
+					ProjectRef = AB1884E5204BB5A3008ED5AE /* cairo.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -210,11 +212,11 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		AB3A9F3A1E5C2EB400649B19 /* libcairo.a */ = {
+		AB1884ED204BB5A3008ED5AE /* libcairo.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = libcairo.a;
-			remoteRef = AB3A9F391E5C2EB400649B19 /* PBXContainerItemProxy */;
+			remoteRef = AB1884EC204BB5A3008ED5AE /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -246,14 +248,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		AB3A9F421E5C3CD000649B19 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = cairo;
-			targetProxy = AB3A9F411E5C3CD000649B19 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		AB31F8421E59797C006FDC31 /* Main.storyboard */ = {
@@ -372,15 +366,15 @@
 				COMPRESS_PNG_FILES = NO;
 				DEVELOPMENT_TEAM = T4X9SQWNR2;
 				ENABLE_BITCODE = NO;
-				HEADER_SEARCH_PATHS = "/Users/jessebennett/Documents/UnsafeLibs/cairo-1.15.2-iOS/**";
+				HEADER_SEARCH_PATHS = (
+					"/Users/jessebennett/Documents/UnsafeLibs/cairo-1.15.2-iOS/**",
+					"/Users/jessebennett/Documents/GitHub/cairo-1.15.2-iOS/**",
+				);
 				INCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "";
 				INFOPLIST_FILE = GLESViewHarness/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = (
-					"\"$(SRCROOT)/../../UnsafeLibs/lpng1634/projects/xcode\"",
-					"$(PROJECT_DIR)",
-				);
+				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wolfspider.GLESViewHarness;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -397,15 +391,15 @@
 				COMPRESS_PNG_FILES = NO;
 				DEVELOPMENT_TEAM = T4X9SQWNR2;
 				ENABLE_BITCODE = NO;
-				HEADER_SEARCH_PATHS = "/Users/jessebennett/Documents/UnsafeLibs/cairo-1.15.2-iOS/**";
+				HEADER_SEARCH_PATHS = (
+					"/Users/jessebennett/Documents/UnsafeLibs/cairo-1.15.2-iOS/**",
+					"/Users/jessebennett/Documents/GitHub/cairo-1.15.2-iOS/**",
+				);
 				INCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "";
 				INFOPLIST_FILE = GLESViewHarness/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = (
-					"\"$(SRCROOT)/../../UnsafeLibs/lpng1634/projects/xcode\"",
-					"$(PROJECT_DIR)",
-				);
+				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wolfspider.GLESViewHarness;
 				PRODUCT_NAME = "$(TARGET_NAME)";
