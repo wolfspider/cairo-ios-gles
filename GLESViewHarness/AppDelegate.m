@@ -15,8 +15,8 @@
 #import <cairo.h>
 #import <cairo-gl.h>
 
-#define WIDTH 750
-#define HEIGHT 1334
+#define WIDTH 400
+#define HEIGHT 800
 
 #define LINEWIDTH 1.5
 
@@ -439,8 +439,7 @@ void drawPNG(cairo_t* cr, cairo_surface_t *image) {
 
 	cr = cairo_create (surface);
 	
-	NSString* filePath = [[NSBundle mainBundle] pathForResource:@"snake"
-														 ofType:@"png"];
+	NSString* filePath = [[NSBundle mainBundle] pathForResource:@"snake" ofType:@"png"];
 	const char *pngPath = [filePath UTF8String];
 	
 	surface = cairo_image_surface_create_from_png(pngPath);
